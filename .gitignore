@@ -1,0 +1,33 @@
+# --- Database Specifics ---
+# Ignore large SQL data dumps (backups)
+*.sql.gz
+*.sql.zip
+*.bak
+
+# Ignore specific local data exports, but keep schema/migration scripts
+# If you want to keep your table structures but ignore the actual rows:
+# data/
+# dump.sql
+
+# --- Database Design (ERD) ---
+# If using Workbench, ignore the auto-generated backup files
+*.mwb.bak
+*.mwb.lck
+
+# --- Environment & Security ---
+# NEVER check in files containing database credentials
+.env
+config.php
+settings.json
+auth.yaml
+
+# --- OS & Editor Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Documentation Backups ---
+# If you export your ERD to PDF/PNG, you might want to keep the final version 
+# but ignore temp files
+*~
