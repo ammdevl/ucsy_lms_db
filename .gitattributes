@@ -1,0 +1,14 @@
+# 1. Force .sql files to be recognized as MySQL
+*.sql linguist-language=MySQL
+
+# 2. Ensure SQL files are NOT considered documentation or vendored
+*.sql linguist-detectable=true
+*.sql linguist-documentation=false
+
+# 3. Handle TeX files (already detectable, but keeping your preference)
+*.tex linguist-detectable=true
+*.tex linguist-documentation=false
+
+# 4. Handle StarUML files (Fixed syntax)
+*.mdj linguist-language=JSON
+*.mdj linguist-detectable=true
